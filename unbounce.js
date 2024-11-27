@@ -1,14 +1,15 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // These 3 lines need to be adapted based on your Unbounce Landing pages
+  // Also change the ID of the VAT Number field. You can find it around line 36
 
-  // Id of your Uncounce Form
+  // Id of your Unbounce Form
   const form = document.querySelector('#lp-pom-form-167');
 
   // Replace the ID of your form here as well
   const formButton = document.querySelector('#lp-pom-form-167 form button');
 
-  // This is the ID of your new button replacing the original Uncounce Submit button
+  // This is the ID of your new button replacing the original Unbounce Submit button
   const submitButton = document.querySelector('#lp-pom-button-532');
   let isSubmitting = false;
 
