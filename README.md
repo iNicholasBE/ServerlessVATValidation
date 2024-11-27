@@ -26,3 +26,6 @@ Validating VAT numbers is crucial for businesses operating within the European U
 - **Vercel Account**: To deploy the serverless API.
 - **Unbounce Account**: To integrate the custom JavaScript into your landing pages.
 - **Node.js & npm**: For local development and dependency management.
+
+Want a video that explains how to implement this in Unbounce?  
+[Request access here](https://drive.google.com/drive/folders/1A3WAIeeRApOnafm_v_mFWHZ8QZYQgvHH)
