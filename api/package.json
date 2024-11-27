@@ -1,0 +1,17 @@
+{
+  "name": "vat-validation-proxy",
+  "version": "1.0.0",
+  "description": "Serverless function to validate VAT numbers using the VIES API",
+  "main": "api/check-vat-number.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "license": "MIT"
+}
