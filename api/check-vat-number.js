@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 
 module.exports = async (req, res) => {
     // List of allowed origins //haha still have * in here
-    const allowedOrigins = ['https://get.boma.eu', '*''];
+    const allowedOrigins = ['https://get.boma.eu', '*'];
 
     // Get the Origin header from the request
     const origin = req.headers.origin;
