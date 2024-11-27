@@ -3,6 +3,26 @@
 const fetch = require('node-fetch');
 
 module.exports = async (req, res) => {
+    // List of allowed origins //haha still have * in here
+    const allowedOrigins = ['https://get.boma.eu', '*''];
+
+    // Get the Origin header from the request
+    const origin = req.headers.origin;
+    if (allowedOrigins.includes(origin)) {
+        res.setHeader('Access-Control-Allow-Origin', origin);
+    } else {
+        res.setHeader('Access-Control-Allow-Origin', ''); // Or handle accordingly
+    }
+
+    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS'); // Allowed methods
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type'); // Allowed headers
+
+    if (req.method === 'OPTIONS') {
+        // Handle preflight OPTIONS request
+        res.status(200).end();
+        return;
+    }
+
     if (req.method !== 'POST') {
         res.status(405).json({ error: 'Method not allowed' });
         return;
